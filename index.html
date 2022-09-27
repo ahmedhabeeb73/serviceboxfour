@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./lightbox.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./servicebox-3.css" />
+    <title>d-3</title>
+  <style>
+     .animation-video {
+    width: 100%;
+}
+ video {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    max-height: 1200px;
+}
+
+ .heading {
+    max-width: 80rem;
+    margin: 0 auto;
+    z-index: 1;
+  display: none;
+}
+
+ .section_container {
+    position: absolute;
+}
+.section_container {
+    width: 100%;
+    max-width: 1600px;
+    padding-left: var(--space-9);
+    padding-right: var(--space-9);
+    margin: 0 auto;
+}
+
+#hero {
+  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    
+}
+ #hero.end::before {
+    opacity: 1;
+   
+}
+
+ #hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(at 29% 41%, #b0a9ef 0px, transparent 50%),radial-gradient(at 84% 2%, #d1f5e8 0px, transparent 50%),radial-gradient(at 44% 95%, #b3baff 0px, transparent 50%),radial-gradient(at 100% 92%, #99adff 0px, transparent 50%),radial-gradient(at 0% 100%, #dbdbdb 0px, transparent 50%),radial-gradient(at 60% 24%, #b8ffd4 0px, transparent 50%);
+    opacity: 0;
+    transition: 1s ease opacity;
+    background-size: 220%;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+  </style>
+  </head>
+  <body>
+    <!-- Start the  Navbar -->
+    <header class="navbar-margin">
+      <nav class="navbar fixed-top navbar-expand-lg bg-white p-4">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img width="100px" src="./img/lockteclogo.webp" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-muted fw-bold nav-f text-uppercase"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Anwendung
+                </a>
+                <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Verkehrsbetriebe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Medizin</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Einzelhandel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Öffentlicher Sektor/Verwaltung</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Immobilien Und Wohnen</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Smart Cities Und Smart Terminals</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Tourismus Und Freizeit</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >SICHERHEIT UND MILITÄR</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >INDUSTRIE UND BAU</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >AUSSTELLUNGEN/VERANSTALTUNGEN</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="./drag.html"
+                  >Konfigurator</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-muted fw-bold nav-f text-uppercase"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Produkte
+                </a>
+                <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Cool Lockers</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Locksafe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >ServiceBox</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Smartterminal</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Velosafe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >ServiceBox Basic</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Locksafe Mechanic</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Servicepoint</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="software.html"
+                  >Software</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="about.html"
+                  >Über uns</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="contact.html"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+
+            <div class="dropdown">
+              <i class="bi bi-translate"></i>
+              <a
+                class="btn btn-light dropdown-toggle text-uppercase"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                DE
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item text-uppercase" href="">En</a></li>
+                <li></li>
+              </ul>
+            </div>
+
+            <li
+              class="nav-link ms-4 pe-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <a href="#" class="nav-link"> <i class="bi bi-search"></i></a>
+            </li>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="d-flex flex-column flex-shrink-0 bg-dark ms-auto fix fixed-top sidebar"
+        style="width: 14.5rem"
+      >
+        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row">
+                <div class="col-md-4 lock-icon">
+                  <i class="bi bi-envelope-fill fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">Email</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row">
+                <div class="col-md-4 lock-icon">
+                  <i class="bi bi-telephone-fill fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">Call us</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row lock-icon">
+                <div class="col-md-4">
+                  <i class="bi bi-megaphone-fill fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">Actions</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row lock-icon">
+                <div class="col-md-4">
+                  <i class="bi bi-newspaper fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">News</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- showcase -->
+    <section id="hero" data-navposition="relative" class=" text-white mb-5">
+      <div class="section_container heading">
+        <div class="padding_0 padding_sm_9 txt_center">
+          <h3>
+            <span
+              class="txt_label white txt_caption txt_uppercase margin_bottom_5"
+              data-tr="jqfs"
+              >Locker</span
+            >
+          </h3>
+          <h1
+            class="display-1 fw-bold txt_caption txt_medium txt_uppercase txt_neutral_grayscale_100 margin_bottom_7"
+          >
+            <span
+              >Click & Collect Servicebox <br>
+              </span
+              >
+             
+            </h1>
+            <h2> <span class="txt_book" data-tr="gkwxyo"
+              >
+              Qualität made in Germany.</span
+            ></h2>
+            <h2
+            class="txt_headline txt_medium txt_neutral_grayscale_100 margin_bottom_9"
+            data-tr="bospma"
+          >
+          Abholstation – Anlieferung und Abholung 24/7
+          </h2>
+          <aside class="w-75 mx-auto mt-4">
+            <h3
+              class="txt_body txt_neutral_grayscale_100 margin_bottom_9"
+              data-tr="aoumjgcome "
+            >
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, minima.<br>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, repudiandae.
+            </h3>
+          </aside>
+          <a
+            href="#subscribe"
+            class="btn_secondary_neutral btn btn-outline-light py-3 px-5 mt-4 fw-bold fs-3"
+            data-event-action="click-hero-kmi"
+            data-event-label="Body Comp"
+            data-scroll-target="#subscribe"
+            data-tr="nwxpfdihck"
+            >Order Now</a
+          >
+        </div>
+      </div>
+      
+      <div class="animation-video">
+        <video muted autoplay   class="video" preload="metadata"   >
+          <source src="./products/main.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <!-- showcase application -->
+
+    <section id="product_shortcut" class="real-m">
+      <div class="container text-center">
+        <h2 class="fw-bold display-4 pb-2">
+          LockTec’s Servicebox <br />
+          Qualität made in Germany.
+        </h2>
+        <div class="lead">
+          Die Servicebox von LockTec wurde für die kontaktlose Übergabe von
+          Waren, Paketen und Dienstleistungen entwickelt und kann ganz flexibel
+          von allen Postdienstleistern, Kurierdiensten und Serviceanbietern
+          gleichzeitig genutzt werden. Ob in Appartment- und
+          Studentenwohnanlagen als E-Concierge, bei Kommunen und öffentlichen
+          Einrichtungen als SmartTerminal oder zur Werkzeugausgabe und als
+          Ausleihstation in Unternehmen – die Servicebox von LockTec bietet
+          Ihnen die smarte Lösung.
+        </div>
+      </div>
+    </section>
+
+    <!-- photo section -->
+    <section id="product_photo" class="real-m text-center ">
+      <div class="container">
+        <div class="card shadow-sm bg-white text-center">
+          <img src="./cool-lockers-white-small (1).jpg" class="card-img-top text-center" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold display-3 text-center">ServiceBox</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+
+          <div class="card-body text-center">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="btn btn-danger m-1 py-2 px-4 btn-lg"
+            >
+              Details <i class="bi bi-plus-circle"></i>
+            </button>
+            <a href="#" class="btn btn-danger m-1 p-1 py-2 px-4 btn-lg"
+              >Config <i class="bi bi-box-arrow-up-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Servicebox Fachgrößen
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <section class="container">
+                <div id="product_buttton_magic">
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseOne">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseTwo">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseThree">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseFour">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseFive">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseSix">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseSeven">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseEight">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseNine">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseOne">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseOne">+</button>
+                  <button class="btn btn-sm btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseOne">+</button>
+                
+                </div>
+              </section>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button  btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      1-locker column Type Max
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>1 x MAX</td>
+                            <td>336 x 1732 x 650</td>
+                            <td>378</td>
+                            <td>ca. 65</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     2-locker column Type XL
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>2 x XL</td>
+                            <td>336 x 1072 x 650</td>
+                            <td>234</td>
+                            <td>ca. 68</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      8-locker column Type M/S/L
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>
+                              <p>4 x M</p>
+                              <p>3 x S</p>
+                              <p>1 x L</p>
+                            </td>
+                            <td>
+                              <p>336 x 1072 x 650</p>
+                              <p>336 x 118 x 650</p>
+                              <p>336 x 412 x 650</p>
+                            </td>
+                            <td>
+                              <p>42</p>
+                              <p>26</p>
+                              <p>90</p>
+                            </td>
+                            <td>ca. 92</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      4-locker column Type L
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>
+                              <p>4 x L</p>
+                              
+                            </td>
+                            <td>
+                              <p>336 x 412 x 650</p>
+                              
+                            </td>
+                            <td>
+                              <p>90</p>
+                              
+                            </td>
+                            <td>ca. 76</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      3-locker column Type SXL
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>
+                              <p>3 x SXL</p>
+                              
+                            </td>
+                            <td>
+                              <p>336 x 558 x 650</p>
+                              
+                            </td>
+                            <td>
+                              <p>122</p>
+                              
+                            </td>
+                            <td>ca. 72</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      8-locker column Type L/M/XS
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>
+                              <p>2 x L</p>
+                              <p>2 x M</p>
+                              <p>4 x XS</p>
+                              
+                            </td>
+                            <td>
+                              <p>336 x 412 x 650</p>
+                              <p>336 x 192 x 650</p>
+                              <p>336 x 82 x 650</p>
+                              
+                            </td>
+                            <td>
+                              <p>90</p>
+                              <p>42</p>
+                              <p>18</p>
+                              
+                            </td>
+                            <td>ca. 96</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      3-locker column Type XXL/L/M
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>
+                              <p>1 x XXL</p>
+                              <p>1 x M</p>
+                              <p>1 x L</p>
+                              
+                            </td>
+                            <td>
+                              <p>336 x 1072 x 650</p>
+                              <p>336 x 192 x 650</p>
+                              <p>336 x 412 x 650</p>
+                              
+                            </td>
+                            <td>
+                              <p>234</p>
+                              <p>42</p>
+                              <p>90</p>
+                              
+                            </td>
+                            <td>ca. 72</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      4-locker column Type XL/M/L
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>
+                              <p>1 x XL</p>
+                              <p>2 x M</p>
+                              <p>1 x L</p>
+                              
+                            </td>
+                            <td>
+                              <p>336 x 852 x 650</p>
+                              <p>336 x 192 x 650</p>
+                              <p>336 x 412 x 650</p>
+                              
+                            </td>
+                            <td>
+                              <p>186</p>
+                              <p>42</p>
+                              <p>90</p>
+                              
+                            </td>
+                            <td>ca. 76</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                      5-locker column Type XL/XS/M/L
+
+                    </button>
+                  </h2>
+                  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table table-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">Version <br>(locker depth)</th>
+                            <th scope="col">External size (mm) <br> (width x height x depth)</th>
+                            <th scope="col">Locker size</th>
+                            <th scope="col">Inner size (mm)<br> (width x height x depth)</th>
+                            <th scope="col">Volume<br> (Locker liter)</th>
+                            <th scope="col">Weight (kg)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>650*</td>
+                            <td>400 x 1950 x 670</td>
+                            <td>
+                              <p>1 x XL</p>
+                              <p>2 x XS</p>
+                              <p>1 x M</p>
+                              <p>1 x L</p>
+                              
+                            </td>
+                            <td>
+                              <p>336 x 852 x 650</p>
+                              <p>336 x 82 x 650</p>
+                              <p>336 x 192 x 650</p>
+                              <p>336 x 412 x 650</p>
+                              
+                            </td>
+                            <td>
+                              <p>186</p>
+                              <p>18</p>
+                              <p>42</p>
+                              <p>90</p>
+                              
+                            </td>
+                            <td>ca. 80</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-danger">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why best for us -->
+    <section id="product_why" class="real-m">
+      <div class="container">
+        <h2 class="fw-bold display-4 text-center pb-2">
+          Servicebox Ausstattung
+        </h2>
+        <div class="row">
+          <div class="col bg-white shadow-sm p-3 border text-center rounded-1">
+            <div class="m-5">
+              <i class="bi bi-battery-charging rounded bg-danger p-4 text-white fs-2"></i>
+            </div>
+            <p class="lead text-start">
+              Die Schränke der Pickup Station können optional mit
+              Netzanschlüssen (Locktec Power Charger) zum Laden mobiler Geräte,
+              wie Handys, Laptops, Akkus und Ähnlichem ausgestattet werden.
+            </p>
+          </div>
+          <div class="col shadow-sm p-3 border text-center">
+            <div class="m-5">
+              <i class="bi bi-align-top rounded bg-danger p-4 text-white fs-2"></i>
+            </div>
+            <p class="lead text-start">
+              Des Weiteren können Kleiderstangen und Kleiderhaken zum Aufhängen
+              von Kleidern angebracht werden. Weitere Ausstattungsoption ist ein
+              Zugband zum Anlehnen von Türen.
+            </p>
+          </div>
+          <div class="col shadow-sm p-3 border text-center">
+            <div class="m-5">
+              <i class="bi bi-palette rounded bg-danger p-4 text-white fs-2"></i>
+            </div>
+            <p class="lead text-start">
+              Die Abholstationen sind in verschiedenen Farben lieferbar –
+              selbstverständlich auch in Sonderfarben und Ihrem persönlichen
+              CI-Design.
+            </p>
+          </div>
+          <div class="col shadow-sm p-3 border text-center">
+            <div class="m-5">
+              <i class="bi bi-hand-index-fill rounded bg-danger p-4 text-white fs-2"></i>
+            </div>
+            <p class="lead text-start">
+              Die Bedienstation besteht aus einem PC und Touchscreen mit
+              mehrsprachiger, intuitiver Benutzeroberfläche. Sie ist sowohl
+              integriert als auch separat verfügbar.
+            </p>
+          </div>
+          <div class="col shadow-sm p-3 border text-center rounded-1">
+            <div class="m-5">
+              <i class="bi bi-check-circle rounded bg-danger p-4 text-white fs-2"></i>
+            </div>
+            <p class="lead text-start">
+              Der Öffnungs- und Schließmechanismus der Fächer kann durch
+              PIN-Eingabe am Touchpad, Scannen eines Barcodes oder RFID-Codes
+              als auch durch Fingerabdruck betätigt werden.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- benfits section -->
+
+    <section id="vorteile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md bg-light  bg-opacity-75 p-4 mb-2 border rounded-1">
+            <h2 class="fw-bold fs-3 pb-1">Vorteile für den Betreiber</h2>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i>
+              Last-Mile-Solution: Reduzierung der Lieferkosten – keine
+              Zweitanlieferung mehr notwendig.
+            </p>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i>
+              Wettbewerbsvorteil – Differenzierung von der Konkurrenz.
+            </p>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i> Kontrolle
+              und Steuerung bequem über Webbrowser möglich.
+            </p>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i>Abläufe
+              können auf Ihren Unternehmensprozess angepasst und mit Ihrer ERP-
+              oder Webshop-Software verknüpft werden.
+            </p>
+          </div>
+          <div class="col-md"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md"></div>
+          <div class="col-md bg-light bg-opacity-75 p-4 border rounded-1">
+            <h2 class="fw-bold fs-3 pb-1">Vorteile für den Nutzer</h2>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i> 24/7:
+              Anlieferung und Abholung von Paketen und Waren rund um die Uhr.
+            </p>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i> Keine
+              Lieferung wird mehr verpasst.
+            </p>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i> Keine
+              Wartezeiten bei Abholung der Produkte.
+            </p>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i
+              >Abholbenachrichtigung per E-Mail.
+            </p>
+            <p class="lead">
+              <i class="bi bi-check-lg text-danger fw-bold fs-3"></i>Mit Power
+              Chargern ausgestattete Fächer ermöglichen das Aufladen von
+              elektronischen Geräten.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3 -->
+
+    <div class="container mt-5">
+      <div class="row ">
+        <div class="col m-2 text-center p-5 bg-light shadow-sm ">
+          <i class="bi bi-box-arrow-in-down display-4 text-secondary"></i>
+            <h3 class="mt-2 fs-2 fw-bold">Sofort einsetzbar</h3>
+
+        </div>
+        <div class="col m-2  text-center p-5 bg-light shadow-sm ">
+          <i class="bi bi-alarm-fill display-4 text-secondary"></i>
+            <h3 class="mt-2 fs-2 fw-bold">Liferzeit auf Anfrage</h3>
+
+        </div>
+        <div class="col m-2  text-center p-5 bg-light shadow-sm ">
+          <i class="bi bi-box-seam  display-4 text-secondary"></i>
+            <h3 class="mt-2 fs-2 fw-bold">Sichere Lieferung </h3>
+            p
+
+        </div>
+      </div>
+    </div>
+
+
+     <!-- faq -->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="text-center fw-bolder mt-5">Häufig Gestellte Fragen.</h2>
+    </div>
+    <div class="col-md-6 mt-5">
+      <div class="accordion accordion-flush " id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsum.
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque deserunt neque adipisci magni laborum, sed fugiat quae explicabo eos aliquam.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aspernatur perferendis voluptates quas consequatur ea ipsa magnam quod libero est?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus praesentium libero atque at consequatur facilis magnam impedit minima dolore culpa.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Lorem ipsum dolor sit amet.
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              After you have selected a location , a visualisation of the system appears. This visualisation shows the different parking spaces/ lockers, including the respective parking space/ locker number.
+    
+              If the symbol of a plug is shown below the parking space/ locker number of an available parking space/ locker, this parking space/ locker has a charging socket for e-bikes and pedelecs.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          Lorem ipsum dolor sit amet consectetur.
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quo.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingfive">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni doloribus accusamus animi laborum temporibus ad fugit sequi minima, mollitia et.
+            </button>
+          </h2>
+          <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              An e-mail with the subject "Please confirm your profile at the BR portal" will be sent afterwards. Please check your inbox! In this e-mail you have to confirm your e-mail address. After successful confirmation, an e-mail with the subject "Welcome to the BR portal" will be sent and the profile is created.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingsix">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+            Lorem ipsum dolor sit amet.
+            </button>
+          </h2>
+          <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, quam odit. Voluptatum nemo facere fugiat delectus eligendi, ducimus illo incidunt?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingseven">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseseven">
+          Lorem ipsum dolor sit amet.
+            </button>
+          </h2>
+          <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingseven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ipsam magnam vel minima culpa laboriosam veniam tempora quas doloremque expedita.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingeight">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+           lormfa-rotate-270
+            </button>
+          </h2>
+          <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              You can go to profile page and change it.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingnine">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapsenine">
+              How can I view my access data?
+            </button>
+          </h2>
+          <div id="flush-collapsenine" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              You can view your access data at any time in the Bike login area under "Manage bookings". To do this, you have to log in with your e-mail address and password. You will also receive an e-mail with the access data after the booking. The subject is "Your PIN for your booking - booking number: 7-XXXXXX".
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingten">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseten" aria-expanded="false" aria-controls="flush-collapseten">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque magni, atque quisquam id modi? Quas optio enim sed repellendus?
+            </button>
+          </h2>
+          <div id="flush-collapseten" class="accordion-collapse collapse" aria-labelledby="flush-headingten" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              The upper boxes have a rail that can be pulled out and tilted down. The bicycle is placed on this rail and the rail is lifted. The bicycle is well anchored in the rail by means of an appropriate device.
+    
+              Please note that it is not possible to park an e-bike/pedelec in the upper part of the boxes due to its weight.
+              
+              Please note that parking an e-bike/pedelec in the upper part of the boxes is not possible at every location, it due to its weight. More information about the maxium weight, size etc. you will find in the reference texts belonging to the location you would like to rent a box. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingelf">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseelf" aria-expanded="false" aria-controls="flush-collapseelf">
+           Lorem ipsum dolor sit amet.
+            </button>
+          </h2>
+          <div id="flush-collapseelf" class="accordion-collapse collapse" aria-labelledby="flush-headingelf" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              No, your bike is not automatically insured. SITEC GmbH is not liable for stolen items or other damage.
+    
+              Tip: Check your existing insurance policies.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingQ">
+            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQ" aria-expanded="false" aria-controls="flush-collapseQ">
+             Other Question?
+            </button>
+          </h2>
+          <div id="flush-collapseQ" class="accordion-collapse collapse" aria-labelledby="flush-headingQ" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+            
+              <ul class="list-group">
+               
+                <li class="list-group-item"><i class="bi bi-telephone"></i> +49 9261 -60 75 90</li>
+                <li class="list-group-item">   <i class="bi bi-envelope"></i>  info@locktec.com</li>
+             
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+</div>
+
+
+<div class="container">
+
+  <h1 class="fw-light text-center text-lg-start mt-4 mb-0">Lockers  Gallery</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-start">
+
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Locksafe5_Wiesbaden_Luisenforum.jpg" class="d-block mb-4 h-100 " data-lightbox="roadtrip" >
+        <img loading="lazy" class="serviceboximg"  src="./serviceboxphotos/Locksafe5_Wiesbaden_Luisenforum.jpg" alt="" >
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_Aussenbereich.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_Aussenbereich.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_click_collect.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_click_collect.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_Lush_Dorset.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg"   src="./serviceboxphotos/Servicebox_Lush_Dorset.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_Paketautomat.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_Paketautomat.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_Paketstation_click_collect.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_Paketstation_click_collect.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_Paketstation_UEbergabestation.png" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_Paketstation_UEbergabestation.png" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_TheForge_Newcastle_Moorfield.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_TheForge_Newcastle_Moorfield.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_Paketstationen_Paketautomat.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_Paketstationen_Paketautomat.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_PickupStation.png" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_PickupStation.png" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_TheForge_Newcastle_Moorfield.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_TheForge_Newcastle_Moorfield.jpg" alt="">
+      </a>
+    </div>
+    <div class=" col-md-3 col-sm-3 col-xs-6">
+      <a href="./serviceboxphotos/Servicebox_UEbergabesystem.jpg" class="d-block mb-4 h-100" data-lightbox="roadtrip">
+        <img loading="lazy" class="serviceboximg" src="./serviceboxphotos/Servicebox_UEbergabesystem.jpg" alt="">
+      </a>
+    </div>
+  </div>
+
+</div>
+    <!-- end showcase -->
+
+    <!-- footer -->
+    <section id="footer" class="bg-secondary-main">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Navigation</h5>
+              <ul class="nav flex-column">
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Anwendung</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Konfigurator</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Software</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Über uns</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Kontakt</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0">News</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Actions</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Produkte</h5>
+              <ul class="nav flex-column">
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Cool Lockers</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Locksafe</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >ServiceBox</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Smartterminal</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Velosafe</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >ServiceBox Basic</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Locksafe Mechanic</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Servicepoint</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Palettenbox</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Hilfe</h5>
+              <ul class="nav flex-column">
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0">AGB</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Datenschutz</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Downloads</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Karriere</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Impressum</a
+                  >
+                </li>
+                <li>
+                  <a href="./faq.html" class="nav-link p-0 text-muted mb-2 p-0"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Cookies</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-danger" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+              <div class="mt-5">
+                <a href="#">
+                  <img
+                    class="lazyload"
+                    style="height: 40px"
+                    data-src="./img/sitec-logo.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p>© 2022 Locktec, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><i class="bi bi-instagram fa-2x"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><i class="bi bi-youtube fa-2x"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><i class="bi bi-facebook fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- End footer -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/62a82edbb0d10b6f3e773793/1g5gl8amh';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+           
+  const heading=document.querySelector('.heading')
+  const hero=document.querySelector('#hero')
+ 
+      setTimeout(() => {
+        hero.classList.add('end')
+        heading.style.display = "block";
+   
+
+ }, 7000);
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="owl.carousel.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ca11177b7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./lightbox.min.js"></script>
+    <script src="servicebox-3.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+/* .feature-band {
+  padding: 680px 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.feature-band .fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -100;
+} */
+
+
+ .pro-video video {
+ height: 100vh; 
+max-width: 100%;
+-o-object-fit: cover;
+  object-fit: cover; 
+   width: 100%;
+  border-radius: 0;  
+} 
+
+
+.real-m{
+  margin-bottom: 10rem;
+}
+
+
+
+
+#product_buttton_magic{
+  background: url('./a\ 2.png')no-repeat center center/cover;
+  height: 50vh;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+  
+}
+
+
+#vorteile{
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./servicebox-showcase.png')no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+

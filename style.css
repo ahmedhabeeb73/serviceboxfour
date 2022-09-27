@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* .active {
+ border-bottom:4px solid #ce111e;
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.navbar-margin{
+  margin-bottom: 10rem;
+}
+
+.text-danger{
+  color: #ce111e !important;
+}
+
+.bg-danger{
+  background: #ce111e !important;
+}
+
+
+.size-1{
+  font-size: 3.5rem;
+}
+
+.size-bold{
+font-weight: 900;
+}
+
+.size-2{
+font-size: 2.5rem;
+}
+.size-3{
+font-size: 1.5rem;
+}
+
+h3{
+  font-size: 18px;
+}
+
+.lockhover{
+ transition: all .1s ease-in-out; 
+}
+.lockhover:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+}
+
+
+.m-t{
+margin-top: 8rem;
+}
+.m-tt{
+margin-top: 7rem;
+}
+.m-ttt{
+  margin-top: 19rem;
+}
+
+.m-b{
+  margin-bottom: 20rem;
+}
+
+
+/* Navbar */
+.sidebar {
+  margin-top: 20rem;
+  transform: translateX(70%);
+  transition: transform 0.5s;
+  border-radius: 10px;
+}
+.sidebar:hover {
+  transform: translateX(0%);
+  transition: transform 0.5s;
+}
+
+
+#search-results{
+  height: calc(100vh - 560px);
+  overflow-y: scroll;
+}
+.s:hover{
+background: #ce111e;
+color: #fff;
+}
+/* End Navbar */
+
+/* sections *  */
+#description,
+#ups,
+#blogs,
+#iconlockers,
+#footer,
+#philosophie,
+#ourmission,
+#unternehmens,
+#software,
+#diagram,
+#function,
+#usecase,
+#contact
+{
+  margin-top: 8rem !important;
+}
+
+#description{
+margin-top: 12rem !important;
+}
+
+
+
+#lo-space{
+  margin-top: 6rem;
+}
+
+
+
+/* end section  *  */
+
+
+/* Slider section  */
+
+
+
+.fr{
+  margin-top: 8rem !important;
+}
+
+.first{
+ 
+  /* background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%); */
+  /* background-image: linear-gradient(to top, #ce111e 0%, #ce111e 99%, #ce111e 100%); */
+height: 50vh;
+  color: #000;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, #fff 40%, #ce111e 40%);
+  border: 1px solid #cfcbca;
+
+}
+
+.flex-lock{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.flex-img  {
+  width: 500px;
+}
+
+
+
+
+.bg-secondary-main{
+  background-image: linear-gradient(to top, #eff1f4 0%, #eff1f4 99%, #eff1f4 100%);
+}
+.owl-next:hover,.owl-prev:hover{
+  background: transparent !important;
+}
+
+
+.owl-prev{
+  position: absolute;
+  right : 40px;
+  bottom: -60px;
+
+}
+.owl-prev span{
+  color: #ce111e;
+  font-size: 3rem;
+}
+
+.owl-next{
+  position: absolute;
+  right : 20px;
+  bottom: -60px;
+}
+.owl-next span{
+  color: #ce111e;
+  font-size: 3rem;
+}
+
+.owl-dots{
+  position: absolute;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  
+  background: #333;
+
+}
+
+.owl-dot.active span {
+  background: #ce111e !important;
+
+}
+
+
+/* Slider section end */
+
+
+/* Media Query */
+
+@media screen and (max-width: 940px) {
+.size-3{
+ font-size: 1rem;
+}
+.size-5{
+  font-size: 1rem;
+
+}
+.first{
+  background-image: linear-gradient(to top, #ce111e 0%, #ce111e 99%, #ce111e 100%); 
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border:none;
+  padding: 2rem;
+  
+  }
+  .btn-flex{
+    color: #Fff;
+    border-color: #fff;
+    margin-bottom:2px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+
+.first{
+background-image: linear-gradient(to top, #ce111e 0%, #ce111e 99%, #ce111e 100%); 
+height: 80vh;
+color: #fff;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+border:none;
+padding: 2rem;
+
+}
+.btn-flex{
+  color: #Fff;
+  border-color: #fff;
+  margin-bottom:2px;
+}
+
+
+  .swiper-button-prev,.swiper-button-next{
+    display: none;
+  }
+
+  /* sidebar */
+  .sidebar{
+    display: none !important;
+  }
+
+  /* end sidebar */
+
+
+  /* start grid-six */
+.grid-six h3,p{
+  font-size: 10px;
+}
+  /* end grid-six */
+
+  /* logos section */
+.logos{
+  padding: 10px;
+}
+/* end logos section */
+
+.size-1,.size-2{
+  font-size: 2rem;
+}
+
+
+
+.size-5{
+  font-size: 1rem;
+}
+
+
+}
+
+
+/* Descrption section */
+.description{
+  margin-top: 5rem;
+}
+/* End   Descrption section*/
+
+
+
+/* start grid-six section */
+
+.grid-six{
+  margin-top: 8rem;
+}
+.photo-1{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/cool.lockers_gekuehlteAbholfaecher_Pickup_\ \(1\).jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-2{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Locksafe5_Wiesbaden_Luisenforum.jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-3{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Locksafe_Schliessfaecher_Flughafen.jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-4{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Servicebox_click_collect.jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-5{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/cool.lockers_gekuehlteAbholfaecher_Pickup__2_\ \(1\).jfif')no-repeat center center/cover;
+  height: 20vh;
+}
+.photo-6{
+  background: linear-gradient(to right,rgba(51, 51, 51,0.5),rgba(51, 51, 51,0.7)),url('./img/zahlreiche/Stadtwerke_Bamberg_Locksafe.jpg')no-repeat center center/cover;
+  height: 20vh;
+}
+/* end  grid-six section*/
+
+/* Start logsos section */
+
+.slider{
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+}
+
+.logos{
+  width: 100%;
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.fab{
+  width: calc(100% / 6);
+  animation: fade-in 0.5s 
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* end logos section */
+
+
+
+
+/* Uper und page */
+
+
+#unternehmens{
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+}
+
+#about-us{
+  margin-top: 10rem;
+}
+
+
+
+/* icons */
+
+.icon:hover{
+ color: #ce111e;
+ transition: all 1s ease-in-out;
+}
+
+/* timeline */
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+  position: relative;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .main-timeline-2::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #ce111e;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-2::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #ce111e;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #333;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #333 transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right-2::after {
+  left: -14px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+  left: 31px;
+  }
+  
+  /* Full-width contain\de\ers */
+  .timeline-2 {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+  
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+  left: 18px;
+ 
+  }
+  
+  .left-2::before {
+  right: auto;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+  left: 0%;
+  }
+  }
+
+/* end uper page */
+
+
+
+/* software page */
+
+#software{
+
+  clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+  background-image: linear-gradient(to top, #ce111e 0%, #ce111e 99%, #ce111e 100%);
+}
+
+
+.span-bg{
+  background: rgba(255, 255, 0,0.3);
+  padding: 0.20rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.span-bg-intra{
+  background: rgb(206, 17, 30,0.3);
+  padding: 0.20rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.span-bg-pos{
+  background: rgba(17, 206, 165, 0.3);
+  padding: 0.20rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.span-bg-bike{
+  background: rgba(17, 134, 206, 0.3);
+  padding: 0.20rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.software--title {
+  color: #fff;
+  font-size: 5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  
+}
+
+.software--sub {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+
+
+.swiper {
+  width: 100%;
+   padding: 8rem;
+   background: linear-gradient(to top, #eff1f4 0%, #eff1f4 99%, #eff1f4 100%);
+  margin-top: 1rem;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+background: #fff;
+  color: #333;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.swiper-slide:hover{
+  background: #ce111e;
+  color: #Fff;
+}
+
+.swiper-slide .s-slid {
+  display: block;
+  width: 100%;
+}
+
+
+.use{
+  margin-bottom: 10rem;
+}
+
+/* contact page */
+
+
+
+
+.nav-f{
+  font-size: 17px;
+  
+}
+
+
+
+
+
+/* end contac pagr */
+
+/* news page */
+
+
+.img-size img{
+ width: 265px;
+ height: 265px;
+background-size: contain;
+margin-right: 1rem;
+}
+
+/* news page */
+
+
+/* products servicebox */
+
+.aac-img {
+  max-width: 100%;
+  height: auto;
+  width:  100%;
+  object-fit: cover;
+  object-position: center;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+video {
+  object-fit: contain;
+  width: 600px;
+  margin-top: 90px;
+  border-radius: 20px;
+ 
+}
+
+
+
+
+
+.servicebox-text{
+  max-width: 700px;
+  margin: 10rem auto;
+  margin-bottom: 10px;
+ 
+}
+
+.serviceboximg{
+   width:  150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
+
+
+/* service 5 */
+.bg-product-img{
+  background:linear-gradient(to right,rgba(0, 0, 0,0.3),rgba(0, 0, 0,0.1)), url('./5.png') no-repeat center bottom/cover;
+  height: 70vh;
+ 
+}
+
+
+ .bg-product-text{
+  background: rgba(255, 255, 255,1);
+  width: 600px;
+  border-radius: 10px;
+  padding: 15px;
+  bottom: -40px;
+  left: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+
+  
+} 
+
+.btn-locktec-o{
+ 
+  opacity: 0.2;
+}
+
+.btn-locktec-o:hover{
+  opacity: 1;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url('cool-lockers-white-small (1).jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+
+
+/* animation */
+/* 
+.hide-fireship{
+opacity: 0;
+filter: blur(5px); */
+/* transform: translateX(-100%); */
+/* transition: all 0.6s;
+} */
+
+/* .show-fireship{
+opacity: 1;
+filter: blur(0); */
+/* transform: translateX(0); */
+
+/* } */
+
+/* animation: .4s cubic-bezier(0.16, 1, 0.3, 1) home-community-cards-2 forwards; */
+/* 
+@media(prefers-reduced-motion){
+  .hide-fireship{
+    transition: none;
+  }
+}
+
+.fireship-logo:nth-child(2){
+  transition-delay: 200ms;
+
+}
+.fireship-logo:nth-child(3){
+  transition-delay: 400ms;
+
+}
+.fireship-logo:nth-child(4){
+  transition-delay: 600ms;
+
+}
+.fireship-logo:nth-child(5){
+  transition-delay: 800ms;
+
+}
+.fireship-logo:nth-child(6){
+  transition-delay: 1000ms;
+
+}
+.fireship-logo:nth-child(7){
+  transition-delay: 1200ms;
+
+} */
